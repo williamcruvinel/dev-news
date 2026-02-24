@@ -1,8 +1,9 @@
-
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-      <main className="min-h-screen"></main>
-
+    <main className="container mx-auto px-4 py-8 space-y-10 mt-20">
+      <Hero />
+    </main>
   );
 }
