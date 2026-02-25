@@ -25,7 +25,7 @@ function Footer() {
                 <Link href="/mundo">Mundo</Link>
               </li>
               <li className="hover:text-blue-500 transition-all duration-300">
-                <Link href="/tecnologia">Tecnologia</Link>
+                <Link href="/tecnologia">Tecnólogia</Link>
               </li>
               <li className="hover:text-blue-500 transition-all duration-300">
                 <Link href="/esportes">Esportes</Link>

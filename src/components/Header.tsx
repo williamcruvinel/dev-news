@@ -17,7 +17,7 @@ function Header() {
             <Link href="/mundo">Mundo</Link>
           </li>
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
-            <Link href="/tecnologia">Tecnologia</Link>
+            <Link href="/tecnologia">Tecnólogia</Link>
           </li>
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
             <Link href="/esportes">Esportes</Link>
