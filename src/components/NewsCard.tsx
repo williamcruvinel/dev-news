@@ -8,7 +8,7 @@ type Props = {
 
 export default function NewsCard({ news }: Props) {
   return (
-    <article className="group border rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white">
+    <article className="group border border-gray-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white">
 
       <div className="relative w-full h-44 overflow-hidden">
         <Image
