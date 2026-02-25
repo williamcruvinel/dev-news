@@ -1,13 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
+import { newsMock } from '@/data/news';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
+  const news = newsMock.slice(-1)[0];
+
   return (
     <section className="w-full">
       <div className="relative w-full h-105 md:h-130 rounded-2xl overflow-hidden">
-
         <Image
-          src="/hero.png"
+          src={news.image}
           alt="Manchete principal"
           fill
           priority
@@ -17,26 +19,24 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-end">
           <div className="p-6 md:p-10 max-w-2xl text-white">
-
             <span className="inline-block bg-red-600 text-xs uppercase font-bold px-3 py-1 rounded-full mb-3">
-              Tecnologia
+              {news.category}
             </span>
 
             <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-3">
-              Inteligência artificial redefine produtividade no ambiente corporativo
+              {news.title}
             </h1>
 
             <p className="text-sm md:text-base text-gray-200 mb-4">
-              Ferramentas baseadas em IA transformam processos internos e impulsionam inovação em empresas de diferentes setores.
+              {news.description}
             </p>
 
             <Link
-              href="/noticia/1"
+              href={`/noticia/${news.id}`}
               className="inline-block font-semibold border-b border-transparent hover:border-white transition-all duration-300"
             >
               Ler matéria completa →
             </Link>
-
           </div>
         </div>
       </div>
