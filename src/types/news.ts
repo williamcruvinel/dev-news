@@ -5,4 +5,5 @@ export type News = {
   description: string;
   image: string;
   category: string;
+  content: string;
 };
