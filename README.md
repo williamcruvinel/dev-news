@@ -1,6 +1,6 @@
-# 📰 Impacto News
+# 📰 Dev News
 
-O **Impacto News** é um portal fictício de notícias desenvolvido com foco educacional para aplicar, na prática, conceitos modernos de desenvolvimento frontend utilizando **Next.js, React, TypeScript e Tailwind CSS**.
+O **Dev News** é um portal fictício de notícias desenvolvido com foco educacional para aplicar, na prática, conceitos modernos de desenvolvimento frontend utilizando **Next.js, React, TypeScript e Tailwind CSS**.
 
 O projeto simula um ambiente real de construção de um portal jornalístico digital, priorizando **componentização, tipagem, performance, responsividade e experiência do usuário**.
 
@@ -8,7 +8,7 @@ O projeto simula um ambiente real de construção de um portal jornalístico dig
 
 ## 🚀 Demonstração
 
-O Impacto News apresenta:
+O Dev News apresenta:
 
 * Página inicial com manchete principal
 * Listagem de notícias organizadas em categorias
@@ -149,7 +149,7 @@ git clone https://github.com/williamcruvinel/dev-news.git
 ### 2️⃣ Acessar pasta
 
 ```bash
-cd impacto-news
+cd dev-news
 ```
 
 ### 3️⃣ Instalar dependências
