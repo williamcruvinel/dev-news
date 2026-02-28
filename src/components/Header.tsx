@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import DropdownMenu from './DropdownMenu';
 
 function Header() {
   return (
@@ -9,18 +10,32 @@ function Header() {
           <Image src="/logo.png" alt="Logo" width={100} height={100} />
         </Link>
 
-        <ul className="flex gap-8 uppercase items-center justify-center text-blue-900 font-bold ">
+        {
+          <div className="block md:hidden">
+            <DropdownMenu />
+          </div>
+        }
+
+        <ul className="hidden md:flex gap-8 uppercase items-center justify-center text-blue-900 font-bold">
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
-            <Link href="/brasil" className='py-6'>Brasil</Link>
+            <Link href="/brasil" className="py-6">
+              Brasil
+            </Link>
           </li>
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
-            <Link href="/mundo" className='py-6'>Mundo</Link>
+            <Link href="/mundo" className="py-6">
+              Mundo
+            </Link>
           </li>
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
-            <Link href="/tecnologia" className='py-6'>Tecnólogia</Link>
+            <Link href="/tecnologia" className="py-6">
+              Tecnólogia
+            </Link>
           </li>
           <li className="relative py-2 cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-red-600 before:transition-all before:duration-300 hover:before:w-full">
-            <Link href="/esportes" className='py-6'>Esportes</Link>
+            <Link href="/esportes" className="py-6">
+              Esportes
+            </Link>
           </li>
         </ul>
       </nav>
